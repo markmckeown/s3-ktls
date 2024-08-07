@@ -1300,7 +1300,11 @@ int main(int argc, char *argv[])
 		goto err;
 	}
 	printf("SSL handshake complete.\n");
-	// Write HTTP header
+	// Write HTTP header.
+	// Should use TCP_CORK option on the socket, this
+	// will hold the headers waiting for more data if
+	// it only has a partial packet to sent - can 
+	// be used with TCP_NODELAY.
 	ret = do_write_http_header(&config);
 	if (ret != 0) {
 		printf("Write of HTTP Headers failed.\n");

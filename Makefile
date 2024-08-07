@@ -9,7 +9,7 @@ all: $(S3_KTLS_EXE)
 
 .PHONY: clean
 clean:
-	rm $(S3_KTLS_EXE)
+	rm -f $(S3_KTLS_EXE)
 
 $(S3_KTLS_EXE): $(S3_KTLS_SRC)
 	gcc $(CFLAGS) $(S3_KTLS_SRC) -o $(S3_KTLS_EXE) $(LIBS)
