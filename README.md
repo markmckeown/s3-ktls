@@ -40,8 +40,8 @@ tls                   114688  0
 
 # To Run:
 ```
-$ ./s3-ktls --splice --file s3-ktls.c  --bucket mmk-s3-test-multi-part-upload --region us-east-2
-mmk@bigmemory:~/s3-ktls$ ./s3-ktls --splice --file s3-ktls.c  --bucket mmk-s3-test-multi-part-upload --region us-east-2
+$ ./s3-ktls --splice --file s3-ktls.c  --bucket s3-test --region us-east-2
+mmk@bigmemory:~/s3-ktls$ ./s3-ktls --splice --file s3-ktls.c  --bucket s3-test --region us-east-2
 Using io_uring splice.
 connect failed with 0
 TCP connection complete.
@@ -49,13 +49,13 @@ SSL handshake complete.
 HTTP Request Header>>>>>
 PUT /s3-ktls.c HTTP/1.1
 Content-Length: 34121
-Host: mmk-s3-test-multi-part-upload.s3.us-east-2.amazonaws.com
+Host: s3-test.s3.us-east-2.amazonaws.com
 Date: Wed, 28 Feb 2024 09:36:13 GMT
 Connection: closed
-Authorization: AWS4-HMAC-SHA256 Credential=ASIA5UQEWCYHV6ZDF6OA/20240228/us-east-2/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date;x-amz-security-token,Signature=11cfea5c308e635ab685c0032a1feaa331be9530bc39d33ed648f1912b3756e5
+Authorization: AWS4-HMAC-SHA256 Credential=ASIA5XXXXXV6ZDF6OA/20240228/us-east-2/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date;x-amz-security-token,Signature=11cfea5c308e635ab685c0032a1feaa331be9530bc39d33ed648f1912b3756e5
 x-amz-content-sha256: UNSIGNED-PAYLOAD
 x-amz-date: 20240228T093613Z
-x-amz-security-token: FwoGZXIvYXdzEBIaDFIAL4tGKTwZzcSeSiKGAc7Mp2/AJlIbvfgAXmSjCXLNvdfzsibdpuJRA3pyzpeQ7ZRiLfxTM+A22BfYEkoPMaw9cHVWguQoYsGwH+7WjLDp50lI/PLatyukEi6zamSqFHudXaR9K4/oIxn1N3mQLg0/bz5tAvhih7n9GwD6+vTLTSI7p14bbSepkpiDlSNRrbN+vt3RKMTr+64GMijg4u7PyTVgH1vTeLsmpuDht5w35ELDjgqV4uhHTOycMzx80rAo9quf
+x-amz-security-token: FwoGZXIvYXdXXXXXXXXXXXXXXeSiKGAc7Mp2/AJlIbvfgAXmSjCXLNvdfzsibdpuJRA3pyzpeQ7ZRiLfxTM+A22BfYEkoPMaw9cHVWguQoYsGwH+7WjLDp50lI/PLatyukEi6zamSqFHudXaR9K4/oIxn1N3mQLg0/bz5tAvhih7n9GwD6+vTLTSI7p14bbSepkpiDlSNRrbN+vt3RKMTr+64GMijg4u7PyTVgH1vTeLsmpuDht5w35ELDjgqV4uhHTOycMzx80rAo9quf
 
 
 <<<<<<Header
